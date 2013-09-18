@@ -1,5 +1,5 @@
 # Expectation Maximization for Gaussian Mixture Models.
-# Copyright (C) 2012-2013 Juan Daniel Valor Miro
+# Copyright (C) 2012-2014 Juan Daniel Valor Miro
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -47,11 +47,14 @@ debug:
 install:
 	cp -f $(BIN)/gmmclass $(BINDIR)/gmmclass
 	cp -f $(BIN)/gmmtrain $(BINDIR)/gmmtrain
+	cp -f $(BIN)/datagen.py $(BINDIR)/datagen.py
 	chmod +x $(BINDIR)/gmmclass
 	chmod +x $(BINDIR)/gmmtrain
+	chmod +x $(BINDIR)/datagen.py
 
 clean:
 	rm -f $(BIN)/gmmtrain
 	rm -f $(BIN)/gmmtrain
 	rm -f $(DAT)/data.gmm
 	rm -f *.gcda
+

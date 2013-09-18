@@ -36,7 +36,7 @@ Authors
 License
 -------
      Expectation Maximization for Gaussian Mixture Models.
-     Copyright (C) 2012-2013 Juan Daniel Valor Miro
+     Copyright (C) 2012-2014 Juan Daniel Valor Miro
 
      This program is free software; you can redistribute it and/or
      modify it under the terms of the GNU General Public License as

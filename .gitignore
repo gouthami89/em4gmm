@@ -5,3 +5,5 @@ gmmtrain
 *.json.gz
 *.json
 *.dSYM
+.history_*
+.history
