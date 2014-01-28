@@ -44,7 +44,7 @@ void thread_loader(void *tdata){
 				if((++t->d)==t->feas->dimension)t->d=0,t->s++;
 			}else if(t->header==1){ /* Finish header reading and alloc needed memory. */
 				t->feas->samples=(int)t->next;
-				t->feas->mean=(decimal*)calloc(2*t->feas->dimension,sizeof(decimal*));
+				t->feas->mean=(decimal*)calloc(2*t->feas->dimension,sizeof(decimal));
 				t->feas->variance=t->feas->mean+t->feas->dimension;
 				t->feas->data=(decimal**)calloc(t->feas->samples,sizeof(decimal*));
 				t->aux=(decimal*)calloc(t->feas->dimension*t->feas->samples,sizeof(decimal));
